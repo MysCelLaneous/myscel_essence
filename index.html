@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MysCel Essence</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #111;
+    }
+    header {
+      background: linear-gradient(to right, royalblue, black);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .tagline {
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    .cta {
+      margin-top: 1.5rem;
+    }
+    .cta a {
+      background: white;
+      color: royalblue;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: royalblue;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+    .products, .bundles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .card {
+      background: #f7f7f7;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1 1 250px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    label, select, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 2rem;
+      background: #f0f0f0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MysCel Essence</div>
+    <div class="tagline">Vibe-Shift in a Bottle. Wax That Whispers. Essence that Speaks.</div>
+    <div class="cta">
+      <a href="#products">Shop Now</a>
+    </div>
+  </header>
+
+  <section class="section" id="products">
+    <h2>Our Signature Scents</h2>
+    <div class="products">
+      <div class="card">
+        <strong>TropiSoul</strong><br>
+        Sweet sun, bold fruit. Tropical soul food in the air.<br>
+        <em>Room Spray: $5 (1oz), $8 (2oz)</em>
+      </div>
+      <div class="card">
+        <strong>Limu Coco</strong><br>
+        Island lime meets creamy coconut. A Caribbean breeze in a bottle.<br>
+        <em>Room Spray: $5 (1oz), $8 (2oz)</em>
+      </div>
+      <div class="card">
+        <strong>Ion Drift</strong><br>
+        A cool, ozone-clean scent with future energy.<br>
+        <em>Room Spray: $5 (1oz), $8 (2oz)</em>
+      </div>
+      <div class="card">
+        <strong>Kaya Breeze</strong><br>
+        Fresh linens, crisp mornings, the breeze that clears the air.<br>
+        <em>Room Spray: $5 (1oz), $8 (2oz)</em>
+      </div>
+      <div class="card">
+        <strong>Velora</strong><br>
+        A warm whisper of cashmere and subtle musk. Sophisticated softness.<br>
+        <em>Room Spray: $5 (1oz), $8 (2oz)</em>
+      </div>
+      <div class="card">
+        <strong>Kandé Krush</strong><br>
+        Sugar crystals meet wild joy. Pink, flirty, and unapologetically sweet.<br>
+        <em>Room Spray: $5 (1oz), $8 (2oz)</em>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="bundles">
+    <h2>Bundle Up & Breathe Easy</h2>
+    <div class="bundles">
+      <div class="card">3 Mini Sprays (1oz) – <strong>$10</strong></div>
+      <div class="card">3 Full Size Sprays (2oz) – <strong>$20</strong></div>
+      <div class="card">6pc Wax Melt – <strong>$5</strong></div>
+      <div class="card">10pc Wax Melt – <strong>$8</strong></div>
+      <div class="card">Any 4 Items – <strong>$25</strong></div>
+    </div>
+    <div class="cta" style="text-align:center; margin-top:2rem;">
+      <a href="#order">Build My Bundle</a>
+    </div>
+  </section>
+
+  <section class="section" id="order">
+    <h2>Place Your Order</h2>
+    <form action="mailto:myscel.essence@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="fragrance">Choose Fragrances</label>
+      <select name="fragrance" id="fragrance" multiple>
+        <option value="TropiSoul">TropiSoul</option>
+        <option value="Limu Coco">Limu Coco</option>
+        <option value="Ion Drift">Ion Drift</option>
+        <option value="Kaya Breeze">Kaya Breeze</option>
+        <option value="Velora">Velora</option>
+        <option value="Kandé Krush">Kandé Krush</option>
+      </select>
+
+      <label for="qty">Quantity Details</label>
+      <textarea name="qty" id="qty" placeholder="E.g. 2 TropiSoul 2oz, 1 Kandé Krush 1oz" rows="4"></textarea>
+
+      <label for="notes">Special Requests</label>
+      <textarea name="notes" id="notes" rows="3"></textarea>
+
+      <input type="submit" value="Submit Order">
+    </form>
+  </section>
+
+  <footer>
+    <div>Follow us on <a href="https://instagram.com/myscel_essence" target="_blank">Instagram</a></div>
+    <div>Contact: <a href="mailto:myscel.essence@gmail.com">myscel.essence@gmail.com</a></div>
+    <div>
+      <a href="#order">Order Page</a> |
+      <a href="#products">Scent Menu</a> |
+      <a href="#">Shipping Info</a>
+    </div>
+  </footer>
+</body>
+</html>
