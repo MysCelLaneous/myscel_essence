@@ -240,34 +240,90 @@ Odor Eliminating Room Sprays & Wax Melts
 
 </section>
 
-<section class="order">
-<section>
-  <h2>Available Sizes</h2>
+<section class="order-section" id="order">
+  <div class="order-card">
+    <h2>Order MysCel Essence™</h2>
+    <p class="order-subtitle">Sweet. Smooth. Spiritual.</p>
 
-  <div class="scents">
-    <div class="card">
-      <h3>1 oz Room Spray</h3>
-      <p>Perfect sample size for testing scents, cars, bathrooms, and small spaces.</p>
-    </div>
+    <details class="scent-details">
+      <summary>View scent descriptions</summary>
 
-    <div class="card">
-      <h3>2 oz Room Spray</h3>
-      <p>Best everyday size for bedrooms, bathrooms, offices, and home refreshes.</p>
-    </div>
+      <div class="scent-grid">
+        <p><strong>TropiSoul:</strong> Tropical, bright, and soulful.</p>
+        <p><strong>Limu Coco:</strong> Coconut lime with a smooth island vibe.</p>
+        <p><strong>Ion Drift:</strong> Fresh, clean, airy, and modern.</p>
+        <p><strong>Kaya Breeze:</strong> Soft linen freshness with calm energy.</p>
+        <p><strong>Nubian Whisper:</strong> Warm, smooth, musky, and elegant.</p>
+        <p><strong>Kande Krush:</strong> Sweet, playful, and candy-like.</p>
+        <p><strong>Noir Santo:</strong> Deep, smoky, woody, and mysterious.</p>
+        <p><strong>Azure Veil:</strong> Cool, clean, blue-toned freshness.</p>
+        <p><strong>Coco Lume:</strong> Creamy coconut with a glowing finish.</p>
+        <p><strong>Velour Kiss:</strong> Soft, romantic, smooth, and sweet.</p>
+        <p><strong>Frost Mint:</strong> Crisp mint with a cool fresh kick.</p>
+        <p><strong>Arctic Veil:</strong> Icy, clean, and refreshing.</p>
+        <p><strong>Obsidian Tide:</strong> Dark, aquatic, bold, and smooth.</p>
+      </div>
+    </details>
 
-    <div class="card">
-      <h3>4 oz Room Spray</h3>
-      <p>Available by request for favorite scents and repeat customers.</p>
-    </div>
+    <form class="order-form">
+      <label for="fragrance">Choose Fragrance</label>
+      <select id="fragrance">
+        <option value="">Select a fragrance</option>
+        <option>TropiSoul</option>
+        <option>Limu Coco</option>
+        <option>Ion Drift</option>
+        <option>Kaya Breeze</option>
+        <option>Nubian Whisper</option>
+        <option>Kande Krush</option>
+        <option>Noir Santo</option>
+        <option>Azure Veil</option>
+        <option>Coco Lume</option>
+        <option>Velour Kiss</option>
+        <option>Frost Mint</option>
+        <option>Arctic Veil</option>
+        <option>Obsidian Tide</option>
+      </select>
 
-    <div class="card">
-      <h3>Wax Melts</h3>
-      <p>Hand-poured wax melts available in select MysCel Essence scents.</p>
-    </div>
+      <label for="product">Choose Product</label>
+      <select id="product">
+        <option value="">Select a product</option>
+        <option value="5">1 oz Room Spray - $5</option>
+        <option value="8">2 oz Room Spray - $8</option>
+        <option value="12">3 x 1 oz Room Spray Bundle - $12</option>
+        <option value="20">3 x 2 oz Room Spray Bundle - $20</option>
+        <option value="0">4 oz Room Spray - Available by Request</option>
+        <option value="2">1 oz Wax Melt Clamshell - $2</option>
+        <option value="5">6 Piece Wax Melt - $5</option>
+        <option value="8">10 Piece Wax Melt - $8</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <select id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+      </select>
+
+      <div class="total-box">
+        Estimated Total: <span id="total">$0</span>
+      </div>
+
+      <label for="customerName">Your Name</label>
+      <input type="text" id="customerName" placeholder="Enter your name">
+
+      <label for="customerContact">Email or Phone Number</label>
+      <input type="text" id="customerContact" placeholder="Enter your contact info">
+
+      <label for="orderNotes">Notes</label>
+      <textarea id="orderNotes" placeholder="Add pickup, delivery, scent mix, or special request details"></textarea>
+
+      <button type="button" onclick="createOrderEmail()">Email My Order</button>
+    </form>
   </div>
 </section>
-
-   <section>
   <h2>Pricing & Bundles</h2>
 
   <div class="scents">
