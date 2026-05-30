@@ -316,7 +316,24 @@
       cursor: pointer;
       box-shadow: 0 0 22px rgba(65,105,225,.65);
     }
+.order-disclaimer {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #c0c0c0;
+  border-left: 5px solid royalblue;
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 
+.order-disclaimer p {
+  margin: 0 0 10px 0;
+}
+
+.order-disclaimer p:last-child {
+  margin-bottom: 0;
+}
     .send-btn span {
       display: block;
       font-family: Georgia, serif;
@@ -392,7 +409,7 @@
   <header class="hero">
     <div class="hero-content">
   
-      <p>Odor Eliminating Room Sprays & Wax Melts handcrafted with purpose.</p>
+    
 
       <div class="cta-row">
         <a href="#order" class="btn">Build Your Order</a>
@@ -564,7 +581,13 @@
               <label for="orderNotes">Special Requests</label>
               <textarea id="orderNotes" placeholder="Pickup, delivery, scent mix, bundle notes, or special instructions..."></textarea>
             </div>
+<div class="order-disclaimer">
+  <p><strong>Payment Policy:</strong> Orders must be paid within 24 hours after payment instructions are sent. Unpaid orders may be canceled after 24 hours.</p>
 
+  <p><strong>Special Requests:</strong> Use the special requests box for scent combinations, pickup or delivery notes, larger sizes, bundle details, or custom order questions.</p>
+
+  <p><strong>Payment Methods:</strong> Payment options may include Cash App, PayPal, Apple Pay, or cash for local pickup. Payment instructions will be sent after your order request is reviewed.</p>
+</div>
             <button class="send-btn" type="button" onclick="createOrderEmail()">
               Send My Order
               <span>We’ll confirm with you soon!</span>
