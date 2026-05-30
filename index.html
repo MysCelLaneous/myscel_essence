@@ -33,15 +33,18 @@
       border-bottom: 3px solid silver;
     }
 
-    .hero-content {
-      max-width: 650px;
-    }
-
-    .logo {
-      max-width: 330px;
-      width: 100%;
-      margin-bottom: 20px;
-    }
+   .hero-content {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+   .logo {
+  max-width: 220px;
+  width: 100%;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,.4));
+}
 
     .tagline {
       font-family: cursive;
@@ -54,13 +57,13 @@
       color: #e8e8e8;
     }
 
-    .cta-row {
-      margin-top: 30px;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
+   .cta-row {
+  margin-top: 140px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
     .btn {
       padding: 14px 26px;
       border-radius: 999px;
@@ -395,7 +398,13 @@
         padding-right: 0;
         padding-bottom: 20px;
       }
+.logo {
+  max-width: 180px;
+}
 
+.cta-row {
+  margin-top: 80px;
+}
       .hero {
         text-align: center;
         justify-content: center;
@@ -412,7 +421,7 @@
 
   <header class="hero">
     <div class="hero-content">
-  
+  <img src="MysCel2.png" alt="MysCel Essence Logo" class="logo">]
     
 
       <div class="cta-row">
