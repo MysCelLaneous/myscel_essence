@@ -299,12 +299,11 @@
     }
 
     .send-row {
-      display: grid;
-      grid-template-columns: 1fr 280px;
-      gap: 20px;
-      align-items: stretch;
-      margin-top: 18px;
-    }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
 
     .send-btn {
       border: none;
@@ -334,13 +333,18 @@
 .order-disclaimer p:last-child {
   margin-bottom: 0;
 }
-    .send-btn span {
-      display: block;
-      font-family: Georgia, serif;
-      font-size: .9rem;
-      margin-top: 5px;
-    }
-
+   .send-btn {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, royalblue, #001e88);
+  color: white;
+  font-family: cursive;
+  font-size: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0 0 22px rgba(65,105,225,.65);
+  padding: 22px;
+}
     .info-section {
       background: #030303;
       border-top: 2px solid silver;
