@@ -492,10 +492,14 @@
         </aside>
 
         <main class="form-panel">
+          <form action="https://formsubmit.co/myscel.essence@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="New MysCel Essence Order Request">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
           <div class="form-top">
             <div>
               <label for="fragrance">1. Choose Fragrance</label>
-              <select id="fragrance">
+              <select id="fragrance" name="Fragrance">
                 <option value="">Select fragrance</option>
                 <option>TropiSoul</option>
                 <option>Limu Coco</option>
@@ -515,7 +519,7 @@
 
             <div>
               <label for="product">2. Choose Product</label>
-              <select id="product">
+             <select id="product" name="Product">
                 <option value="">Select product</option>
                 <option value="5">1 oz Room Spray — $5</option>
                 <option value="8">2 oz Room Spray — $8</option>
@@ -530,7 +534,7 @@
 
             <div>
               <label for="quantity">3. Quantity</label>
-              <select id="quantity">
+             <select id="quantity" name="Quantity">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -567,19 +571,19 @@
           <div class="customer-grid">
             <div>
               <label for="customerName">Your Name</label>
-              <input id="customerName" type="text" placeholder="Enter your name">
+              <input id="customerName" name="Customer Name"
             </div>
 
             <div>
               <label for="customerContact">Email or Phone Number</label>
-              <input id="customerContact" type="text" placeholder="Enter email or phone">
+              <input id="customerContact" name="Contact Information"
             </div>
           </div>
 
           <div class="send-row">
             <div>
               <label for="orderNotes">Special Requests</label>
-              <textarea id="orderNotes" placeholder="Pickup, delivery, scent mix, bundle notes, or special instructions..."></textarea>
+              <textarea id="orderNotes" name="Special Requests"
             </div>
 <div class="order-disclaimer">
   <p><strong>Payment Policy:</strong> Orders must be paid within 24 hours after payment instructions are sent. Unpaid orders may be canceled after 24 hours.</p>
