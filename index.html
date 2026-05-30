@@ -294,6 +294,21 @@ Odor Eliminating Room Sprays & Wax Melts
     </div>
   </div>
 </section>
+
+<button class="btn" onclick="toggleOrderForm()">
+🛒 Build Your Order
+</button>
+
+<div id="orderFormContainer" style="display:none;">
+
+<form id="orderForm" class="order-form">
+
+<!-- form fields go here -->
+
+</form>
+
+</div>
+
    <h2>Order Information</h2>
 
 <p>📱 Text Orders: (217) 860-5408</p>
@@ -313,6 +328,16 @@ Odor Eliminating Room Sprays & Wax Melts
 © 2026 MysCel Essence™
 
 </div>
+<script>
+function toggleOrderForm() {
+    var form = document.getElementById("orderFormContainer");
 
+    if (form.style.display === "none") {
+        form.style.display = "block";
+    } else {
+        form.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
