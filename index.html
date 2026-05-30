@@ -352,7 +352,20 @@
       font-family: cursive;
       font-size: 1.4rem;
     }
+.fragrance-selector {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  max-height: 250px;
+  overflow-y: auto;
+}
 
+.fragrance-selector label {
+  display: block;
+  color: #111;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
     @media (max-width: 900px) {
       .feature-bar,
       .cards,
@@ -391,9 +404,9 @@
 
   <header class="hero">
     <div class="hero-content">
-      <img src="MysCel2.png" alt="MysCel Essence Logo" class="logo">
-      <div class="tagline">Sweet. Smooth. Spiritual.</div>
-      <p>Odor Eliminating Room Sprays & Wax Melts handcrafted with purpose.</p>
+  
+      
+      
 
       <div class="cta-row">
         <a href="#order" class="btn">Build Your Order</a>
@@ -478,24 +491,37 @@
         <main class="form-panel">
           <div class="form-top">
             <div>
-              <label for="fragrance">1. Choose Fragrance</label>
-              <select id="fragrance">
-                <option value="">Select fragrance</option>
-                <option>TropiSoul</option>
-                <option>Limu Coco</option>
-                <option>Ion Drift</option>
-                <option>Kaya Breeze</option>
-                <option>Nubian Whisper</option>
-                <option>Kande Krush</option>
-                <option>Noir Santo</option>
-                <option>Azure Veil</option>
-                <option>Coco Lume</option>
-                <option>Velour Kiss</option>
-                <option>Frost Mint</option>
-                <option>Arctic Veil</option>
-                <option>Obsidian Tide</option>
-              </select>
-            </div>
+              <label>1. Choose Fragrances</label>
+
+<div class="fragrance-selector">
+
+<label><input type="checkbox" value="TropiSoul"> TropiSoul</label>
+
+<label><input type="checkbox" value="Limu Coco"> Limu Coco</label>
+
+<label><input type="checkbox" value="Ion Drift"> Ion Drift</label>
+
+<label><input type="checkbox" value="Kaya Breeze"> Kaya Breeze</label>
+
+<label><input type="checkbox" value="Nubian Whisper"> Nubian Whisper</label>
+
+<label><input type="checkbox" value="Kande Krush"> Kande Krush</label>
+
+<label><input type="checkbox" value="Noir Santo"> Noir Santo</label>
+
+<label><input type="checkbox" value="Azure Veil"> Azure Veil</label>
+
+<label><input type="checkbox" value="Coco Lume"> Coco Lume</label>
+
+<label><input type="checkbox" value="Velour Kiss"> Velour Kiss</label>
+
+<label><input type="checkbox" value="Frost Mint"> Frost Mint</label>
+
+<label><input type="checkbox" value="Arctic Veil"> Arctic Veil</label>
+
+<label><input type="checkbox" value="Obsidian Tide"> Obsidian Tide</label>
+
+</div>
 
             <div>
               <label for="product">2. Choose Product</label>
