@@ -135,11 +135,128 @@ h2{
     color:white;
 }
 
-.order{
-    text-align:center;
-    background:#111;
-    border-top:2px solid #0d6efd;
-}
+<style>
+  .order-section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #000000, #0b1f66);
+    color: white;
+  }
+
+  .order-card {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #ffffff;
+    color: #111111;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    border: 2px solid silver;
+  }
+
+  .order-card h2 {
+    text-align: center;
+    color: #0b1f66;
+    margin-bottom: 5px;
+    font-size: 2rem;
+  }
+
+  .order-subtitle {
+    text-align: center;
+    color: #444;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+
+  .scent-details {
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    background: #f7f7f7;
+  }
+
+  .scent-details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #0b1f66;
+  }
+
+  .scent-grid {
+    margin-top: 15px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .scent-grid p {
+    margin: 0;
+    padding: 10px;
+    background: white;
+    border-left: 4px solid #0b1f66;
+    border-radius: 8px;
+  }
+
+  .order-form {
+    display: grid;
+    gap: 14px;
+  }
+
+  .order-form label {
+    font-weight: bold;
+    color: #111;
+  }
+
+  .order-form select,
+  .order-form input,
+  .order-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .order-form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .total-box {
+    background: #0b1f66;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .order-form button {
+    background: #0b1f66;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .order-form button:hover {
+    background: #000000;
+    transform: scale(1.02);
+  }
+
+  @media (max-width: 600px) {
+    .order-card {
+      padding: 22px;
+    }
+
+    .order-card h2 {
+      font-size: 1.6rem;
+    }
+  }
+</style>
 
 .footer{
     text-align:center;
@@ -150,7 +267,65 @@ h2{
 
 </style>
 </head>
+<script>
+  const productSelect = document.getElementById("product");
+  const quantitySelect = document.getElementById("quantity");
+  const totalDisplay = document.getElementById("total");
 
+  function updateTotal() {
+    const price = Number(productSelect.value);
+    const quantity = Number(quantitySelect.value);
+
+    if (!productSelect.value) {
+      totalDisplay.textContent = "$0";
+      return;
+    }
+
+    if (price === 0) {
+      totalDisplay.textContent = "Available by Request";
+      return;
+    }
+
+    const total = price * quantity;
+    totalDisplay.textContent = "$" + total;
+  }
+
+  productSelect.addEventListener("change", updateTotal);
+  quantitySelect.addEventListener("change", updateTotal);
+
+  function createOrderEmail() {
+    const fragrance = document.getElementById("fragrance").value;
+    const productText = productSelect.options[productSelect.selectedIndex].text;
+    const quantity = quantitySelect.value;
+    const total = totalDisplay.textContent;
+    const name = document.getElementById("customerName").value;
+    const contact = document.getElementById("customerContact").value;
+    const notes = document.getElementById("orderNotes").value;
+
+    if (!fragrance || !productSelect.value || !name || !contact) {
+      alert("Please complete fragrance, product, name, and contact information.");
+      return;
+    }
+
+    const subject = "MysCel Essence Order Request";
+
+    const body =
+      "New MysCel Essence Order Request:%0D%0A%0D%0A" +
+      "Name: " + name + "%0D%0A" +
+      "Contact: " + contact + "%0D%0A" +
+      "Fragrance: " + fragrance + "%0D%0A" +
+      "Product: " + productText + "%0D%0A" +
+      "Quantity: " + quantity + "%0D%0A" +
+      "Estimated Total: " + total + "%0D%0A%0D%0A" +
+      "Notes: " + notes;
+
+    window.location.href =
+      "mailto:myscel.essence@gmail.com?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      body;
+  }
+</script>
 <body>
 
 
