@@ -6,6 +6,20 @@
   <title>MysCel Essence™</title>
 
   <style>
+    :root {
+  --myscel-blue: #1746d1;
+  --myscel-blue-dark: #0d2f91;
+  --myscel-blue-light: #eaf0ff;
+
+  --myscel-silver: #c0c4cc;
+  --myscel-silver-light: #eef0f3;
+
+  --myscel-white: #ffffff;
+  --myscel-off-white: #f8f9fc;
+
+  --myscel-black: #111111;
+  --myscel-text: #20242c;
+}
     * {
       box-sizing: border-box;
     }
@@ -78,29 +92,28 @@
     }
 
     .feature-bar {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding: 30px 8%;
-      background: #050505;
-      border-bottom: 2px solid royalblue;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px 8%;
+  background: var(--myscel-white);
+  border-bottom: 2px solid var(--myscel-silver);
+}
 
-    .feature {
-      border-left: 1px solid silver;
-      padding-left: 20px;
-    }
+  .feature {
+  border-left: 1px solid var(--myscel-silver);
+  padding-left: 20px;
+}
 
-    .feature h3 {
-      color: white;
-      margin-bottom: 8px;
-    }
+  .feature h3 {
+  color: var(--myscel-blue-dark);
+  margin-bottom: 8px;
+}
 
-    .feature p {
-      color: #cfcfcf;
-      margin: 0;
-    }
-
+   .feature p {
+  color: var(--myscel-text);
+  margin: 0;
+}
     section {
       padding: 70px 8%;
     }
