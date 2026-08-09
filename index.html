@@ -521,95 +521,95 @@
   <input type="hidden" name="_subject" value="New MysCel Essence Order Request">
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_template" value="table">
-          <div class="form-top">
-            <div>
-              <label for="fragrance">1. Choose Fragrance</label>
-              <select id="fragrance" name="Fragrance">
-                <option value="">Select fragrance</option>
-                <option value="">Select fragrance</option>
-<option>Kande Krush</option>
-<option>TropiSoul</option>
-<option>Velour Kiss</option>
-<option>Silk Aura</option>
-<option>Black Reserve</option>
-<option>Savage</option>
-<option>Mfalme</option>
-<option>Safi Breeze</option>
-<option>Ion Drift</option>
-              </select>
-            </div>
+       <div class="form-top">
 
-            <div>
-              <label for="product">2. Choose Product</label>
-            <select id="product" name="Product" onchange="toggleMixMatch()">
-  <option value="">Select product</option>
-  <option value="5">1 oz Odor Eliminating Spray — $5</option>
-  <option value="8">2 oz Odor Eliminating Spray — $8</option>
-  <option value="12">Mix & Match any 3 (1 oz) — $12</option>
-   </select>
+  <div class="product-choice">
+    <label for="product">1. Choose Product</label>
+    <select id="product" name="Product">
+      <option value="">Select product</option>
+      <option value="5">1 oz Odor Eliminating Spray — $5</option>
+      <option value="8">2 oz Odor Eliminating Spray — $8</option>
+      <option value="12">Mix & Match any 3 (1 oz) — $12</option>
+    </select>
+  </div>
 
-<div id="mixMatchOptions" style="display: none; margin-top: 15px;">
-  <label>Choose Your 3 Fragrances</label>
+  <div id="regularFragrance">
+    <label for="fragrance">2. Choose Fragrance</label>
+    <select id="fragrance" name="Fragrance">
+      <option value="">Select fragrance</option>
+      <option>Kande Krush</option>
+      <option>TropiSoul</option>
+      <option>Velour Kiss</option>
+      <option>Silk Aura</option>
+      <option>Black Reserve</option>
+      <option>Savage</option>
+      <option>Mfalme</option>
+      <option>Safi Breeze</option>
+      <option>Ion Drift</option>
+    </select>
+  </div>
 
-  <select name="Mix & Match Scent 1">
-    <option value="">Scent 1</option>
-    <option>Kande Krush</option>
-    <option>TropiSoul</option>
-    <option>Velour Kiss</option>
-    <option>Silk Aura</option>
-    <option>Noir Santo</option>
-    <option>Black Reserve</option>
-    <option>Savage</option>
-    <option>Safi Breeze</option>
-    <option>Ion Drift</option>
-  </select>
+  <div id="mixMatchOptions" style="display: none;">
+    <label>2. Choose Your 3 Fragrances</label>
 
- <select name="Mix & Match Scent 2">
-  <option>Kande Krush</option>
-  <option>TropiSoul</option>
-  <option>Velour Kiss</option>
-  <option>Silk Aura</option>
-  <option>Black Reserve</option>
-  <option>Savage</option>
-  <option>Mfalme</option>
-  <option>Safi Breeze</option>
-  <option>Ion Drift</option>
-</select>
+    <select name="Mix & Match Scent 1">
+      <option value="">Scent 1</option>
+      <option>Kande Krush</option>
+      <option>TropiSoul</option>
+      <option>Velour Kiss</option>
+      <option>Silk Aura</option>
+      <option>Black Reserve</option>
+      <option>Savage</option>
+      <option>Mfalme</option>
+      <option>Safi Breeze</option>
+      <option>Ion Drift</option>
+    </select>
 
-  <select name="Mix & Match Scent 3">
-    <option value="">Scent 3</option>
-    <option>Kande Krush</option>
-    <option>TropiSoul</option>
-    <option>Velour Kiss</option>
-    <option>Silk Aura</option>
-    <option>Mfalme</option>
-    <option>Black Reserve</option>
-    <option>Savage</option>
-    <option>Safi Breeze</option>
-    <option>Ion Drift</option>
-  </select>
-</div>
+    <select name="Mix & Match Scent 2">
+      <option value="">Scent 2</option>
+      <option>Kande Krush</option>
+      <option>TropiSoul</option>
+      <option>Velour Kiss</option>
+      <option>Silk Aura</option>
+      <option>Black Reserve</option>
+      <option>Savage</option>
+      <option>Mfalme</option>
+      <option>Safi Breeze</option>
+      <option>Ion Drift</option>
+    </select>
 
-</div>           
-            </div>
+    <select name="Mix & Match Scent 3">
+      <option value="">Scent 3</option>
+      <option>Kande Krush</option>
+      <option>TropiSoul</option>
+      <option>Velour Kiss</option>
+      <option>Silk Aura</option>
+      <option>Black Reserve</option>
+      <option>Savage</option>
+      <option>Mfalme</option>
+      <option>Safi Breeze</option>
+      <option>Ion Drift</option>
+    </select>
+  </div>
 
-            <div>
-              <label for="quantity">3. Quantity</label>
-             <select id="quantity" name="Quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="10">10</option>
-              </select>
-            </div>
+  <div class="quantity-choice">
+    <label for="quantity">3. Quantity</label>
+    <select id="quantity" name="Quantity">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+    </select>
+  </div>
 
-            <div class="total-box">
-              <span>Order Total</span>
-              <strong id="total">$0</strong>
-            </div>
-          </div>
+  <div class="total-box">
+    <span>Order Total</span>
+    <strong id="total">$0</strong>
+  </div>
+
+</div> 
 
           <div class="price-board" id="pricing">
             <div>
@@ -713,11 +713,14 @@
     }
 function toggleMixMatch() {
   const mixMatchOptions = document.getElementById("mixMatchOptions");
+  const regularFragrance = document.getElementById("regularFragrance");
 
   if (productSelect.value === "12") {
     mixMatchOptions.style.display = "block";
+    regularFragrance.style.display = "none";
   } else {
     mixMatchOptions.style.display = "none";
+    regularFragrance.style.display = "block";
   }
 }
     productSelect.addEventListener("change", function() {
