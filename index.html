@@ -1,4 +1,4 @@
-‹<!DOCTYPE html>
+e‹n<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -381,17 +381,35 @@ textarea:focus {
 .order-disclaimer p:last-child {
   margin-bottom: 0;
 }
-   .send-btn {
-  width: 100%;
+  .send-btn {
+  display: block;
+  width: auto;
+  min-width: 260px;
+  max-width: 100%;
+  margin: 18px auto 0;
   border: none;
-  border-radius: 16px;
-  background: linear-gradient(135deg, royalblue, #001e88);
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--myscel-blue), var(--myscel-blue-dark));
   color: white;
-  font-family: cursive;
-  font-size: 1.8rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 0 22px rgba(65,105,225,.65);
-  padding: 22px;
+  box-shadow: 0 8px 18px rgba(23, 70, 209, .22);
+  padding: 14px 28px;
+}
+    .send-btn span {
+  display: block;
+  margin-top: 3px;
+  font-size: .8rem;
+  font-weight: normal;
+  font-style: italic;
+  opacity: .9;
+}
+
+.send-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(23, 70, 209, .3);
 }
     .info-section {
       background: #030303;
