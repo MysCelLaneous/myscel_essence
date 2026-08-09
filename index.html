@@ -199,44 +199,49 @@
   gap: 25px;
 }
 
-    .scent-panel {
-      border-right: 1px solid silver;
-      padding-right: 20px;
-    }
+  .scent-panel {
+  border-right: 1px solid var(--myscel-silver);
+  padding-right: 20px;
+}
 
-    .scent-panel h3 {
-      margin-top: 0;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+.scent-panel h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--myscel-blue-dark);
+}
 
-    .scent-button {
-      width: 100%;
-      background: #090909;
-      color: white;
-      border: 1px solid #555;
-      border-radius: 10px;
-      padding: 12px;
-      margin-bottom: 8px;
-      text-align: left;
-      cursor: pointer;
-      font-weight: bold;
-    }
+.scent-panel p {
+  color: var(--myscel-text);
+}
 
-    .scent-button:hover {
-      background: royalblue;
-    }
+.scent-button {
+  width: 100%;
+  background: var(--myscel-white);
+  color: var(--myscel-blue-dark);
+  border: 1px solid var(--myscel-silver);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all .2s ease;
+}
 
-    .scent-description {
-      background: rgba(255,255,255,.08);
-      border-left: 4px solid royalblue;
-      border-radius: 10px;
-      padding: 14px;
-      margin-top: 15px;
-      color: #e6e6e6;
-      min-height: 90px;
-    }
+.scent-button:hover {
+  background: var(--myscel-blue-light);
+  border-color: var(--myscel-blue);
+}
 
+.scent-description {
+  background: var(--myscel-off-white);
+  color: var(--myscel-text);
+  border-left: 4px solid var(--myscel-blue);
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 15px;
+}
     .form-panel {
       background: #f8f8ff;
       color: #111;
@@ -244,29 +249,45 @@
       padding: 25px;
     }
 
-    .form-top {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-      align-items: end;
-    }
+   .form-top {
+    display: grid;
+    grid-template-columns: 1.15fr 1.15fr .9fr .85fr;
+    gap: 18px;
+    align-items: end;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+}
 
     label {
       font-weight: bold;
-      color: #111;
+      color: var(--myscel-blue-dark);
       display: block;
       margin-bottom: 8px;
     }
 
-    select,
-    input,
-    textarea {
-      width: 100%;
-      padding: 13px;
-      border-radius: 10px;
-      border: 1px solid #aaa;
-      font-size: 1rem;
-    }
+  select,
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid var(--myscel-silver);
+  background: var(--myscel-white);
+  color: var(--myscel-text);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: var(--myscel-blue);
+  box-shadow: 0 0 0 3px rgba(23, 70, 209, .12);
+}
 
     .total-box {
       background: white;
@@ -450,6 +471,24 @@
   text-align: center;
   font-size: 1.25rem;
   padding: 18px 24px;
+}
+      .order-shell .scent-button {
+  background: var(--myscel-white);
+  color: var(--myscel-blue-dark);
+  border: 1px solid var(--myscel-silver);
+  box-shadow: 0 2px 6px rgba(13, 47, 145, .06);
+}
+
+.order-shell .scent-button:hover {
+  background: var(--myscel-blue-light);
+  border-color: var(--myscel-blue);
+  color: var(--myscel-blue-dark);
+}
+
+.order-shell .scent-description {
+  background: var(--myscel-off-white);
+  color: var(--myscel-text);
+  border-left: 4px solid var(--myscel-blue);
 }
   </style>
 </head>
