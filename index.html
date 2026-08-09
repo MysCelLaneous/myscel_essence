@@ -1,843 +1,812 @@
-e‹n<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>MysCel Essence™</title>
 
-  <style>
-    :root {
-  --myscel-blue: #1746d1;
-  --myscel-blue-dark: #0d2f91;
-  --myscel-blue-light: #eaf0ff;
+  <meta
+    name="description"
+    content="MysCel Essence handcrafted odor eliminating sprays and signature scent requests."
+  >
 
-  --myscel-silver: #c0c4cc;
-  --myscel-silver-light: #eef0f3;
-
-  --myscel-white: #ffffff;
-  --myscel-off-white: #f8f9fc;
-
-  --myscel-black: #111111;
-  --myscel-text: #20242c;
-}
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: #020202;
-      color: white;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .hero {
-      min-height: 520px;
-      padding: 35px 8%;
-      background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)),
-        url("MysCelBanner.png") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      border-bottom: 3px solid silver;
-    }
-
-   .hero-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-   .logo {
-  max-width: 220px;
-  width: 100%;
-  filter: drop-shadow(0 0 10px rgba(0,0,0,.4));
-}
-
-    .tagline {
-      font-family: cursive;
-      font-size: clamp(2rem, 5vw, 4rem);
-      margin: 10px 0;
-    }
-
-    .hero p {
-      font-size: 1.3rem;
-      color: #e8e8e8;
-    }
-
-   .cta-row {
- margin-top: 20px;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-    .btn {
-      padding: 14px 26px;
-      border-radius: 999px;
-      font-weight: bold;
-      border: 2px solid silver;
-      background: royalblue;
-      color: white;
-      box-shadow: 0 0 18px rgba(65,105,225,.6);
-    }
-
-    .btn.secondary {
-      background: transparent;
-    }
-
-    .feature-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 30px 8%;
-  background: var(--myscel-white);
-  border-bottom: 2px solid var(--myscel-silver);
-}
-
-  .feature {
-  border-left: 1px solid var(--myscel-silver);
-  padding-left: 20px;
-}
-
-  .feature h3 {
-  color: var(--myscel-blue-dark);
-  margin-bottom: 8px;
-}
-
-   .feature p {
-  color: var(--myscel-text);
-  margin: 0;
-}
-    section {
-      padding: 70px 8%;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 40px;
-    }
-
-   .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-.card {
-  background: linear-gradient(
-    145deg,
-    var(--myscel-blue-dark),
-    var(--myscel-black)
-  );
-  border: 1px solid var(--myscel-silver);
-  border-radius: 18px;
-  padding: 28px;
-  text-align: center;
-  box-shadow: 0 8px 25px rgba(23, 70, 209, .18);
-}
-
-.card h3 {
-  color: var(--myscel-white);
-  font-size: 1.5rem;
-  margin-top: 0;
-  border-bottom: 1px solid var(--myscel-blue-light);
-  padding-bottom: 12px;
-}
-
-.card p {
-  color: var(--myscel-silver-light);
-  line-height: 1.6;
-}
-
-    .order-section {
-      background:
-        radial-gradient(circle at top, rgba(65,105,225,.35), transparent 35%),
-        linear-gradient(#020202, #071128, #020202);
-    }
-
-   .order-section {
-  background: var(--myscel-off-white);
-}
-
-.order-shell {
-  max-width: 1150px;
-  margin: auto;
-  border: 1px solid var(--myscel-silver);
-  border-radius: 28px;
-  background: var(--myscel-white);
-  padding: 30px;
-  box-shadow: 0 18px 45px rgba(13, 47, 145, .12);
-}
-
-.order-title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.order-title h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin: 0;
-  color: var(--myscel-blue-dark);
-}
-
-.order-title p {
-  font-family: cursive;
-  font-size: 1.6rem;
-  color: var(--myscel-text);
-}
-
-.order-layout {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 25px;
-}
-
-.scent-panel {
-  border-right: 1px solid var(--myscel-silver);
-  padding-right: 20px;
-  align-self: start;
-  height: fit-content;
-}
-
-.scent-panel h3 {
-  margin-top: 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--myscel-blue-dark);
-}
-
-.scent-panel p {
-  color: var(--myscel-text);
-}
-
-.scent-button {
-  width: 100%;
-  background: var(--myscel-white);
-  color: var(--myscel-blue-dark);
-  border: 1px solid var(--myscel-silver);
-  border-radius: 10px;
-  padding: 12px;
-  margin-bottom: 8px;
-  text-align: left;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all .2s ease;
-}
-
-.scent-button:hover {
-  background: var(--myscel-blue-light);
-  border-color: var(--myscel-blue);
-}
-
-.scent-description {
-  background: var(--myscel-off-white);
-  color: var(--myscel-text);
-  border-left: 4px solid var(--myscel-blue);
-  border-radius: 10px;
-  padding: 14px;
-  margin-top: 15px;
-}
-    .form-panel {
-      background: #f8f8ff;
-      color: #111;
-      border-radius: 20px;
-      padding: 25px;
-    }
-
-   .form-top {
-    display: grid;
-    grid-template-columns: 1.15fr 1.15fr .9fr .85fr;
-    gap: 18px;
-    align-items: end;
-    background: white;
-    padding: 20px;
-    border-radius: 16px;
-    margin-bottom: 22px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
-}
-
-    label {
-      font-weight: bold;
-      color: var(--myscel-blue-dark);
-      display: block;
-      margin-bottom: 8px;
-    }
-
-  select,
-input,
-textarea {
-  width: 100%;
-  padding: 13px;
-  border-radius: 10px;
-  border: 1px solid var(--myscel-silver);
-  background: var(--myscel-white);
-  color: var(--myscel-text);
-  font-size: 1rem;
-  outline: none;
-  transition: border-color .2s ease, box-shadow .2s ease;
-}
-
-select:focus,
-input:focus,
-textarea:focus {
-  border-color: var(--myscel-blue);
-  box-shadow: 0 0 0 3px rgba(23, 70, 209, .12);
-}
-
-    .total-box {
-      background: white;
-      border-left: 4px solid royalblue;
-      border-radius: 12px;
-      padding: 12px;
-      text-align: center;
-    }
-
-    .total-box span {
-      display: block;
-      font-size: .85rem;
-      color: #333;
-    }
-
-    .total-box strong {
-      font-size: 2rem;
-      color: royalblue;
-    }
-
-    .price-board {
-      background: #020202;
-      color: white;
-      border-radius: 16px;
-      padding: 25px;
-      margin: 25px 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      border: 1px solid silver;
-    }
-
-    .price-board h3 {
-      text-align: center;
-      margin-top: 0;
-      color: white;
-    }
-
-    .price-line {
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dotted #777;
-      padding: 8px 0;
-      color: #e9e9e9;
-    }
-
-    .customer-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 18px;
-    }
-
-    textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
-
-    .send-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-  margin-top: 18px;
-}
-
-    .send-btn {
-      border: none;
-      border-radius: 16px;
-      background: linear-gradient(135deg, royalblue, #001e88);
-      color: white;
-      font-family: cursive;
-      font-size: 1.8rem;
-      cursor: pointer;
-      box-shadow: 0 0 22px rgba(65,105,225,.65);
-    }
-.order-disclaimer {
-    background: #ffffff;
-    color: #20242c;
-    border: 1px solid #d9dee8;
-    border-left: 3px solid var(--myscel-blue);
-    border-radius: 12px;
-    padding: 14px 16px;
-    font-size: 0.9rem;
-    line-height: 1.45;
-}
-.order-disclaimer p {
-  margin: 0 0 10px 0;
-}
-
-.order-disclaimer p:last-child {
-  margin-bottom: 0;
-}
-  .send-btn {
-  display: block;
-  width: auto;
-  min-width: 260px;
-  max-width: 100%;
-  margin: 18px auto 0;
-  border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--myscel-blue), var(--myscel-blue-dark));
-  color: white;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.15rem;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 8px 18px rgba(23, 70, 209, .22);
-  padding: 14px 28px;
-}
-    .send-btn span {
-  display: block;
-  margin-top: 3px;
-  font-size: .8rem;
-  font-weight: normal;
-  font-style: italic;
-  opacity: .9;
-}
-
-.send-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(23, 70, 209, .3);
-}
-    .info-section {
-      background: #030303;
-      border-top: 2px solid silver;
-      text-align: center;
-    }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      max-width: 950px;
-      margin: auto;
-    }
-
-    .info-item {
-      border-left: 1px solid silver;
-      border-right: 1px solid silver;
-      padding: 20px;
-    }
-
-    footer {
-      background: linear-gradient(90deg, #001e88, #020202);
-      padding: 25px 8%;
-      text-align: center;
-      border-top: 2px solid silver;
-      font-family: cursive;
-      font-size: 1.4rem;
-    }
-
-    @media (max-width: 900px) {
-      .feature-bar,
-      .cards,
-      .info-grid,
-      .form-top,
-      .customer-grid,
-      .price-board,
-      .send-row {
-        grid-template-columns: 1fr;
-      }
-
-      .order-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .scent-panel {
-        border-right: none;
-        border-bottom: 1px solid silver;
-        padding-right: 0;
-        padding-bottom: 20px;
-      }
-
-.logo {
-  max-width: 430px;
-  width: 100%;
-  display: block;
-  margin: 80px auto 0 auto;
-}
-
-.cta-row {
-  margin-top: 90px;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-  justify-content: center;
-}
-
-.hero {
-  min-height: 720px;
-  text-align: center;
-  justify-content: center;
-  background-position: center top;
-}
-
-.btn {
-  width: 80%;
-  text-align: center;
-  font-size: 1.25rem;
-  padding: 18px 24px;
-}
-      .order-shell .scent-button {
-  background: var(--myscel-white);
-  color: var(--myscel-blue-dark);
-  border: 1px solid var(--myscel-silver);
-  box-shadow: 0 2px 6px rgba(13, 47, 145, .06);
-}
-
-.order-shell .scent-button:hover {
-  background: var(--myscel-blue-light);
-  border-color: var(--myscel-blue);
-  color: var(--myscel-blue-dark);
-}
-
-.order-shell .scent-description {
-  background: var(--myscel-off-white);
-  color: var(--myscel-text);
-  border-left: 4px solid var(--myscel-blue);
-}
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 
 <body>
 
-  <header class="hero">
-    <div class="hero-content">
-  <img src="MysCel2.png" alt="MysCel Essence Logo" class="logo">
-    
+  <!-- ========================================
+       HEADER / HERO
+  ========================================= -->
 
-      <div class="cta-row">
-        <a href="#order" class="btn">Build Your Order</a>
-        <a href="#pricing" class="btn secondary">View Pricing</a>
+  <header class="hero">
+
+    <div class="hero-inner">
+
+      <img
+        src="images/myscel-logo.jpeg"
+        alt="MysCel Essence"
+        class="hero-logo"
+      >
+
+      <p class="hero-tagline">
+        Distinct fragrance. Elevated atmosphere.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#order" class="btn btn-primary">
+          Build Your Order
+        </a>
+
+        <a href="#scents" class="btn btn-outline">
+          Explore Scents
+        </a>
+
       </div>
+
     </div>
+
   </header>
 
-  <div class="feature-bar">
-    <div class="feature">
+
+  <!-- ========================================
+       BRAND HIGHLIGHTS
+  ========================================= -->
+
+  <section class="brand-highlights">
+
+    <div class="highlight">
+      <span class="highlight-icon">✦</span>
       <h3>Eliminates Odors</h3>
-      <p>Freshens rooms, cars, bathrooms, and small spaces.</p>
+      <p>
+        Freshens rooms, cars, bathrooms, and small spaces.
+      </p>
     </div>
-    <div class="feature">
+
+    <div class="highlight">
+      <span class="highlight-icon">✦</span>
       <h3>Premium Scents</h3>
-      <p>High quality fragrances crafted with care.</p>
+      <p>
+        High-quality fragrances crafted with care.
+      </p>
     </div>
-    <div class="feature">
+
+    <div class="highlight">
+      <span class="highlight-icon">✦</span>
       <h3>Any Space</h3>
-      <p>Perfect for bedrooms, offices, bathrooms, and home refreshes.</p>
+      <p>
+        Perfect for bedrooms, offices, bathrooms, and home refreshes.
+      </p>
     </div>
-    <div class="feature">
+
+    <div class="highlight">
+      <span class="highlight-icon">✦</span>
       <h3>Handcrafted</h3>
-      <p>Made in small batches with love and intention.</p>
-    </div>
-  </div>
-
- <section>
-  <h2 class="section-title">Featured Products</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Odor Eliminating Sprays</h3>
-      <p>Freshen rooms, cars, bathrooms, and small spaces with smooth, lasting fragrance.</p>
+      <p>
+        Made in small batches with care and intention.
+      </p>
     </div>
 
-    <div class="card">
-      <h3>Mix & Match</h3>
-      <p>Choose any three 1 oz Odor Eliminating Sprays for $12.</p>
+  </section>
+
+
+  <!-- ========================================
+       PRODUCTS / PRICING
+  ========================================= -->
+
+  <section class="products-section">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">MysCel Essence</span>
+
+      <h2>
+        Fragrance for Your Space
+      </h2>
+
+      <p>
+        Choose your favorite scent or create your own combination.
+      </p>
+
     </div>
 
-    <div class="card">
-      <h3>Signature Scent Requests</h3>
-      <p>Looking for something different? Custom and signature scent requests are available.</p>
+
+    <div class="product-cards">
+
+      <article class="product-card">
+
+        <span class="card-accent">01</span>
+
+        <h3>
+          Odor Eliminating Sprays
+        </h3>
+
+        <div class="price-list">
+
+          <div class="price-row">
+            <span>1 oz</span>
+            <strong>$5</strong>
+          </div>
+
+          <div class="price-row">
+            <span>2 oz</span>
+            <strong>$8</strong>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card featured-card">
+
+        <span class="card-accent">02</span>
+
+        <h3>
+          Mix & Match
+        </h3>
+
+        <p class="card-description">
+          Choose any three 1 oz Odor Eliminating Sprays.
+        </p>
+
+        <div class="featured-price">
+          $12
+        </div>
+
+      </article>
+
+
+      <article class="product-card">
+
+        <span class="card-accent">03</span>
+
+        <h3>
+          Signature Scent Requests
+        </h3>
+
+        <p class="card-description">
+          Looking for something different? Custom and signature scent
+          requests are available.
+        </p>
+
+      </article>
+
     </div>
-  </div>
-</section>
-  
+
+  </section>
+
+
+  <!-- ========================================
+       SCENT COLLECTION
+  ========================================= -->
+
+  <section class="scents-section" id="scents">
+
+    <div class="section-heading">
+
+      <span class="eyebrow">The Collection</span>
+
+      <h2>
+        Find Your Scent
+      </h2>
+
+      <p>
+        Select a fragrance to discover its profile.
+      </p>
+
+    </div>
+
+
+    <div class="scent-grid">
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Kande Krush"
+        data-description="Sweet, playful, candy-inspired, and fun."
+      >
+        <span>Kande Krush</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="TropiSoul"
+        data-description="Tropical, bright, juicy, and soulful."
+      >
+        <span>TropiSoul</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Velour Kiss"
+        data-description="Soft, romantic, velvety, and lightly sweet."
+      >
+        <span>Velour Kiss</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Silk Aura"
+        data-description="Soft, smooth, warm, and comforting."
+      >
+        <span>Silk Aura</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Black Reserve"
+        data-description="Bold, smooth, masculine, and refined."
+      >
+        <span>Black Reserve</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Savage"
+        data-description="Bold, masculine, fresh, and confident."
+      >
+        <span>Savage</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Mfalme"
+        data-description="Strong, masculine, smooth, and regal."
+      >
+        <span>Mfalme</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Safi Breeze"
+        data-description="Fresh, clean, crisp, and airy."
+      >
+        <span>Safi Breeze</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+
+      <button
+        type="button"
+        class="scent-card"
+        data-scent="Ion Drift"
+        data-description="Fresh, airy, clean, and modern."
+      >
+        <span>Ion Drift</span>
+        <span class="scent-arrow">→</span>
+      </button>
+
+    </div>
+
+
+    <div class="scent-display" id="scentDisplay">
+
+      <span class="scent-display-icon">✦</span>
+
+      <div>
+        <strong id="scentDisplayName">
+          Select a scent
+        </strong>
+
+        <p id="scentDisplayDescription">
+          Choose a fragrance above to view its description.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================================
+       ORDER FORM
+  ========================================= -->
+
   <section class="order-section" id="order">
-    <div class="order-shell">
 
-      <div class="order-title">
-        <h2>✦ Build Your Order ✦</h2>
-        <p>Choose your favorites and we’ll take care of the rest.</p>
-      </div>
+    <div class="order-container">
 
-      <div class="order-layout">
 
-        <aside class="scent-panel">
-          <h3>Scent Descriptions</h3>
-          <p>Click a scent to view details.</p>
+      <div class="section-heading order-heading">
 
-          <button class="scent-button" onclick="showScent('Kande Krush', 'Sweet, playful, candy-inspired, and fun.')">Kande Krush</button>
+        <span class="eyebrow">Made for You</span>
 
-<button class="scent-button" onclick="showScent('TropiSoul', 'Tropical, bright, juicy, and soulful.')">TropiSoul</button>
+        <h2>
+          Build Your Order
+        </h2>
 
-<button class="scent-button" onclick="showScent('Velour Kiss', 'Soft, romantic, velvety, and lightly sweet.')">Velour Kiss</button>
-
-<button class="scent-button" onclick="showScent('Silk Aura', 'Soft, smooth, warm, and comforting.')">Silk Aura</button>
-
-<button class="scent-button" onclick="showScent('Black Reserve', 'Bold, smooth, masculine, and refined.')">Black Reserve</button>
-
-<button class="scent-button" onclick="showScent('Savage', 'Bold, masculine, fresh, and confident.')">Savage</button>
-
-<button class="scent-button" onclick="showScent('Mfalme', 'Strong, masculine, smooth, and regal.')">Mfalme</button>
-
-<button class="scent-button" onclick="showScent('Safi Breeze', 'Fresh, clean, crisp, and airy.')">Safi Breeze</button>
-
-<button class="scent-button" onclick="showScent('Ion Drift', 'Fresh, airy, clean, and modern.')">Ion Drift</button>
-
-          <div class="scent-description" id="scentDescription">
-            Select a scent to see its description.
-          </div>
-        </aside>
-
-        <main class="form-panel">
-          <form action="https://formsubmit.co/myscel.essence@gmail.com" method="POST">
-  <input type="hidden" name="_subject" value="New MysCel Essence Order Request">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-       <div class="form-top">
-
-  <div class="product-choice">
-    <label for="product">1. Choose Product</label>
-    <select id="product" name="Product">
-      <option value="">Select product</option>
-      <option value="5">1 oz Odor Eliminating Spray — $5</option>
-      <option value="8">2 oz Odor Eliminating Spray — $8</option>
-      <option value="12">Mix & Match any 3 (1 oz) — $12</option>
-    </select>
-  </div>
-
-  <div id="regularFragrance">
-    <label for="fragrance">2. Choose Fragrance</label>
-    <select id="fragrance" name="Fragrance">
-      <option value="">Select fragrance</option>
-      <option>Kande Krush</option>
-      <option>TropiSoul</option>
-      <option>Velour Kiss</option>
-      <option>Silk Aura</option>
-      <option>Black Reserve</option>
-      <option>Savage</option>
-      <option>Mfalme</option>
-      <option>Safi Breeze</option>
-      <option>Ion Drift</option>
-    </select>
-  </div>
-
-  <div id="mixMatchOptions" style="display: none;">
-    <label>2. Choose Your 3 Fragrances</label>
-
-    <select name="Mix & Match Scent 1">
-      <option value="">Scent 1</option>
-      <option>Kande Krush</option>
-      <option>TropiSoul</option>
-      <option>Velour Kiss</option>
-      <option>Silk Aura</option>
-      <option>Black Reserve</option>
-      <option>Savage</option>
-      <option>Mfalme</option>
-      <option>Safi Breeze</option>
-      <option>Ion Drift</option>
-    </select>
-
-    <select name="Mix & Match Scent 2">
-      <option value="">Scent 2</option>
-      <option>Kande Krush</option>
-      <option>TropiSoul</option>
-      <option>Velour Kiss</option>
-      <option>Silk Aura</option>
-      <option>Black Reserve</option>
-      <option>Savage</option>
-      <option>Mfalme</option>
-      <option>Safi Breeze</option>
-      <option>Ion Drift</option>
-    </select>
-
-    <select name="Mix & Match Scent 3">
-      <option value="">Scent 3</option>
-      <option>Kande Krush</option>
-      <option>TropiSoul</option>
-      <option>Velour Kiss</option>
-      <option>Silk Aura</option>
-      <option>Black Reserve</option>
-      <option>Savage</option>
-      <option>Mfalme</option>
-      <option>Safi Breeze</option>
-      <option>Ion Drift</option>
-    </select>
-  </div>
-
-  <div class="quantity-choice">
-    <label for="quantity">3. Quantity</label>
-    <select id="quantity" name="Quantity">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="10">10</option>
-    </select>
-  </div>
-
-  <div class="total-box">
-    <span>Order Total</span>
-    <strong id="total">$0</strong>
-  </div>
-
-</div> 
-
-          <div class="customer-grid">
-            <div>
-              <label for="customerName">Your Name</label>
-              <input id="customerName" name="Customer Name"
-            </div>
-
-            <div>
-              <label for="customerContact">Email or Phone Number</label>
-             <input id="customerContact" name="Contact Information" type="text" placeholder="Enter email or phone">
-            </div>
-          </div>
-
-          <div class="send-row">
-            <div>
-              <label for="orderNotes">Special Requests</label>
-              <textarea id="orderNotes" name="Special Requests" placeholder="Pickup, delivery, scent mix, bundle notes, or special instructions..."></textarea>
-            </div>
-<div class="order-disclaimer">
-  <p><strong>Payment Policy:</strong> Orders must be paid within 24 hours after payment instructions are sent. Unpaid orders may be canceled after 24 hours.</p>
-
-  <p><strong>Special Requests:</strong> Use the special requests box for scent combinations, pickup or delivery notes, larger sizes, bundle details, or custom order questions.</p>
-
-  <p><strong>Payment Methods:</strong> Payment options may include Cash App, PayPal, Apple Pay, or cash for local pickup. Payment instructions will be sent after your order request is reviewed.</p>
-</div>
-            <button class="send-btn" type="submit">
-              Send My Order
-              <span>We’ll confirm with you soon!</span>
-            </button>
-          </div>
-         </form>
-        </main>
+        <p>
+          Choose your favorites and we'll take care of the rest.
+        </p>
 
       </div>
+
+
+      <form
+        class="order-form"
+        action="https://formsubmit.co/myscel.essence@gmail.com"
+        method="POST"
+      >
+
+        <!-- FormSubmit Settings -->
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="New MysCel Essence Order Request"
+        >
+
+        <input
+          type="hidden"
+          name="_captcha"
+          value="false"
+        >
+
+        <input
+          type="hidden"
+          name="_template"
+          value="table"
+        >
+
+
+        <!-- ORDER SELECTION -->
+
+        <div class="order-builder">
+
+
+          <div class="form-field">
+
+            <label for="product">
+              1. Choose Product
+            </label>
+
+            <select
+              id="product"
+              name="Product"
+              required
+            >
+
+              <option value="">
+                Select product
+              </option>
+
+              <option value="5">
+                1 oz Odor Eliminating Spray — $5
+              </option>
+
+              <option value="8">
+                2 oz Odor Eliminating Spray — $8
+              </option>
+
+              <option value="12">
+                Mix & Match any 3 (1 oz) — $12
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- REGULAR FRAGRANCE -->
+
+          <div
+            class="form-field"
+            id="regularFragrance"
+          >
+
+            <label for="fragrance">
+              2. Choose Fragrance
+            </label>
+
+            <select
+              id="fragrance"
+              name="Fragrance"
+            >
+
+              <option value="">
+                Select fragrance
+              </option>
+
+              <option>Kande Krush</option>
+              <option>TropiSoul</option>
+              <option>Velour Kiss</option>
+              <option>Silk Aura</option>
+              <option>Black Reserve</option>
+              <option>Savage</option>
+              <option>Mfalme</option>
+              <option>Safi Breeze</option>
+              <option>Ion Drift</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- MIX & MATCH -->
+
+          <div
+            class="mix-match-fields"
+            id="mixMatchOptions"
+            hidden
+          >
+
+            <label>
+              2. Choose Your 3 Fragrances
+            </label>
+
+
+            <div class="mix-match-grid">
+
+              <select name="Mix & Match Scent 1">
+
+                <option value="">
+                  Scent 1
+                </option>
+
+                <option>Kande Krush</option>
+                <option>TropiSoul</option>
+                <option>Velour Kiss</option>
+                <option>Silk Aura</option>
+                <option>Black Reserve</option>
+                <option>Savage</option>
+                <option>Mfalme</option>
+                <option>Safi Breeze</option>
+                <option>Ion Drift</option>
+
+              </select>
+
+
+              <select name="Mix & Match Scent 2">
+
+                <option value="">
+                  Scent 2
+                </option>
+
+                <option>Kande Krush</option>
+                <option>TropiSoul</option>
+                <option>Velour Kiss</option>
+                <option>Silk Aura</option>
+                <option>Black Reserve</option>
+                <option>Savage</option>
+                <option>Mfalme</option>
+                <option>Safi Breeze</option>
+                <option>Ion Drift</option>
+
+              </select>
+
+
+              <select name="Mix & Match Scent 3">
+
+                <option value="">
+                  Scent 3
+                </option>
+
+                <option>Kande Krush</option>
+                <option>TropiSoul</option>
+                <option>Velour Kiss</option>
+                <option>Silk Aura</option>
+                <option>Black Reserve</option>
+                <option>Savage</option>
+                <option>Mfalme</option>
+                <option>Safi Breeze</option>
+                <option>Ion Drift</option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <!-- QUANTITY -->
+
+          <div class="form-field quantity-field">
+
+            <label for="quantity">
+              3. Quantity
+            </label>
+
+            <select
+              id="quantity"
+              name="Quantity"
+            >
+
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- TOTAL -->
+
+          <div class="order-total">
+
+            <span>
+              Order Total
+            </span>
+
+            <strong id="total">
+              $0
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <!-- CUSTOMER INFORMATION -->
+
+        <div class="customer-section">
+
+
+          <div class="customer-fields">
+
+
+            <div class="form-field">
+
+              <label for="customerName">
+                Your Name
+              </label>
+
+              <input
+                id="customerName"
+                name="Customer Name"
+                type="text"
+                placeholder="Enter your name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-field">
+
+              <label for="customerContact">
+                Email or Phone Number
+              </label>
+
+              <input
+                id="customerContact"
+                name="Contact Information"
+                type="text"
+                placeholder="Enter email or phone"
+                required
+              >
+
+            </div>
+
+          </div>
+
+
+          <div class="form-field special-request-field">
+
+            <label for="orderNotes">
+              Special Requests
+            </label>
+
+            <textarea
+              id="orderNotes"
+              name="Special Requests"
+              placeholder="Pickup, delivery, scent combinations, custom or signature scent requests, or special instructions..."
+            ></textarea>
+
+          </div>
+
+        </div>
+
+
+        <!-- ORDER INFORMATION -->
+
+        <div class="order-notes">
+
+
+          <div class="order-note">
+
+            <span class="note-icon">01</span>
+
+            <div>
+
+              <h3>
+                Payment Policy
+              </h3>
+
+              <p>
+                Orders must be paid within 24 hours after payment
+                instructions are sent. Unpaid orders may be canceled
+                after 24 hours.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="order-note">
+
+            <span class="note-icon">02</span>
+
+            <div>
+
+              <h3>
+                Special Requests
+              </h3>
+
+              <p>
+                Use the special requests box for scent combinations,
+                pickup or delivery notes, or custom order questions.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="order-note">
+
+            <span class="note-icon">03</span>
+
+            <div>
+
+              <h3>
+                Payment Methods
+              </h3>
+
+              <p>
+                Payment options may include Cash App, PayPal,
+                Apple Pay, or cash for local pickup.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <div class="submit-area">
+
+          <button
+            class="send-btn"
+            type="submit"
+          >
+
+            Send My Order
+
+            <span>
+              We'll confirm with you soon.
+            </span>
+
+          </button>
+
+        </div>
+
+      </form>
+
     </div>
+
   </section>
 
-  <section class="info-section">
-    <h2 class="section-title">Order Information</h2>
 
-    <div class="info-grid">
-      <div class="info-item">
-        <h3>Text Orders</h3>
-        <p>(217)433-4754</p>
-      </div>
+  <!-- ========================================
+       CONTACT
+  ========================================= -->
 
-      <div class="info-item">
-        <h3>Instagram</h3>
-        <p>@myscel_essence</p>
-      </div>
+  <section class="contact-section">
 
-      <div class="info-item">
-        <h3>Handcrafted</h3>
-        <p>Room Sprays & Wax Melts made with purpose.</p>
-      </div>
+    <div class="section-heading">
+
+      <span class="eyebrow">
+        Stay Connected
+      </span>
+
+      <h2>
+        MysCel Essence
+      </h2>
+
     </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-item">
+
+        <span class="contact-label">
+          Website
+        </span>
+
+        <a href="https://myscel.com">
+          myscel.com
+        </a>
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <span class="contact-label">
+          Email
+        </span>
+
+        <a href="mailto:myscel.essence@gmail.com">
+          myscel.essence@gmail.com
+        </a>
+
+      </div>
+
+
+      <div class="contact-item">
+
+        <span class="contact-label">
+          Text
+        </span>
+
+        <a href="sms:2174334754">
+          217-433-4754
+        </a>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <footer>
-    MysCel Essence™ | Thank you for supporting a small business!
+
+  <!-- ========================================
+       FOOTER
+  ========================================= -->
+
+  <footer class="site-footer">
+
+    <img
+      src="images/myscel-logo.jpeg"
+      alt="MysCel Essence"
+      class="footer-logo"
+    >
+
+    <p>
+      MysCel Essence™
+    </p>
+
   </footer>
 
-  <script>
-    const productSelect = document.getElementById("product");
-    const quantitySelect = document.getElementById("quantity");
-    const totalDisplay = document.getElementById("total");
 
-    function updateTotal() {
-      const price = Number(productSelect.value);
-      const quantity = Number(quantitySelect.value);
-
-      if (!productSelect.value) {
-        totalDisplay.textContent = "$0";
-        return;
-      }
-
-      if (price === 0) {
-        totalDisplay.textContent = "By Request";
-        return;
-      }
-
-      totalDisplay.textContent = "$" + price * quantity;
-    }
-function toggleMixMatch() {
-  const mixMatchOptions = document.getElementById("mixMatchOptions");
-  const regularFragrance = document.getElementById("regularFragrance");
-
-  if (productSelect.value === "12") {
-    mixMatchOptions.style.display = "block";
-    regularFragrance.style.display = "none";
-  } else {
-    mixMatchOptions.style.display = "none";
-    regularFragrance.style.display = "block";
-  }
-}
-    productSelect.addEventListener("change", function() {
-  updateTotal();
-  toggleMixMatch();
-});
-    quantitySelect.addEventListener("change", updateTotal);
-
-    function showScent(name, description) {
-      document.getElementById("scentDescription").innerHTML =
-        "<strong>" + name + "</strong><br>" + description;
-
-      document.getElementById("fragrance").value = name;
-    }
-
-    function createOrderEmail() {
-      const fragrance = document.getElementById("fragrance").value;
-      const productText = productSelect.options[productSelect.selectedIndex].text;
-      const quantity = quantitySelect.value;
-      const total = totalDisplay.textContent;
-      const name = document.getElementById("customerName").value;
-      const contact = document.getElementById("customerContact").value;
-      const notes = document.getElementById("orderNotes").value;
-
-      if (!fragrance || !productSelect.value || !name || !contact) {
-        alert("Please complete fragrance, product, name, and contact information.");
-        return;
-      }
-
-      const subject = "MysCel Essence Order Request";
-
-      const body =
-        "MysCel Essence Order Request\n\n" +
-        "Name: " + name + "\n" +
-        "Contact: " + contact + "\n" +
-        "Fragrance: " + fragrance + "\n" +
-        "Product: " + productText + "\n" +
-        "Quantity: " + quantity + "\n" +
-        "Estimated Total: " + total + "\n\n" +
-        "Special Requests:\n" + notes;
-
-      window.location.href =
-        "mailto:myscel.essence@gmail.com?subject=" +
-        encodeURIComponent(subject) +
-        "&body=" +
-        encodeURIComponent(body);
-    }
-  </script>
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>
