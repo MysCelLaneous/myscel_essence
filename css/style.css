@@ -171,13 +171,13 @@ textarea {
 .brand-highlights {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid var(--silver-light);
   border-bottom: 1px solid var(--silver-light);
 }
 
 .highlight {
-  padding: 34px 26px;
+  padding: 26px 24px;
   text-align: center;
   position: relative;
 }
@@ -186,31 +186,39 @@ textarea {
   content: "";
   position: absolute;
   right: 0;
-  top: 24px;
-  bottom: 24px;
+  top: 28%;
+  bottom: 28%;
   width: 1px;
-  background: var(--silver-light);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--silver),
+    transparent
+  );
 }
 
 .highlight-icon {
   display: inline-block;
   color: var(--silver-dark);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
 }
 
 .highlight h3 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--blue-dark);
-  font-size: 1.15rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: 700;
 }
 
 .highlight p {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 250px;
   color: var(--muted);
-  line-height: 1.5;
-  font-size: 0.95rem;
+  line-height: 1.45;
+  font-size: 0.88rem;
 }
-
 /* SHARED SECTION STYLES */
 
 .products-section,
