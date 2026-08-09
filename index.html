@@ -715,8 +715,19 @@
 
       totalDisplay.textContent = "$" + price * quantity;
     }
+function toggleMixMatch() {
+  const mixMatchOptions = document.getElementById("mixMatchOptions");
 
-    productSelect.addEventListener("change", updateTotal);
+  if (productSelect.value === "12") {
+    mixMatchOptions.style.display = "block";
+  } else {
+    mixMatchOptions.style.display = "none";
+  }
+}
+    productSelect.addEventListener("change", function() {
+  updateTotal();
+  toggleMixMatch();
+});
     quantitySelect.addEventListener("change", updateTotal);
 
     function showScent(name, description) {
