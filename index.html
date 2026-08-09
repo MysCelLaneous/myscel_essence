@@ -544,17 +544,57 @@
 
             <div>
               <label for="product">2. Choose Product</label>
-             <select id="product" name="Product">
-                <option value="">Select product</option>
-                <option value="5">1 oz Room Spray — $5</option>
-                <option value="8">2 oz Room Spray — $8</option>
-                <option value="12">3 x 1 oz Bundle — $12</option>
-                <option value="20">3 x 2 oz Bundle — $20</option>
-                <option value="0">4 oz Room Spray — Available by Request</option>
-                <option value="2">1 oz Wax Melt Clamshell — $2</option>
-                <option value="5">6 Piece Wax Melt — $5</option>
-                <option value="8">10 Piece Wax Melt — $8</option>
-              </select>
+            <select id="product" name="Product" onchange="toggleMixMatch()">
+  <option value="">Select product</option>
+  <option value="5">1 oz Odor Eliminating Spray — $5</option>
+  <option value="8">2 oz Odor Eliminating Spray — $8</option>
+  <option value="12">Mix & Match any 3 (1 oz) — $12</option>
+</select>
+   </select>
+
+<div id="mixMatchOptions" style="display: none; margin-top: 15px;">
+  <label>Choose Your 3 Fragrances</label>
+
+  <select name="Mix & Match Scent 1">
+    <option value="">Scent 1</option>
+    <option>Kande Krush</option>
+    <option>TropiSoul</option>
+    <option>Velour Kiss</option>
+    <option>Silk Aura</option>
+    <option>Noir Santo</option>
+    <option>Black Reserve</option>
+    <option>Savage</option>
+    <option>Safi Breeze</option>
+    <option>Ion Drift</option>
+  </select>
+
+ <select name="Mix & Match Scent 2">
+  <option>Kande Krush</option>
+  <option>TropiSoul</option>
+  <option>Velour Kiss</option>
+  <option>Silk Aura</option>
+  <option>Black Reserve</option>
+  <option>Savage</option>
+  <option>Mfalme</option>
+  <option>Safi Breeze</option>
+  <option>Ion Drift</option>
+</select>
+
+  <select name="Mix & Match Scent 3">
+    <option value="">Scent 3</option>
+    <option>Kande Krush</option>
+    <option>TropiSoul</option>
+    <option>Velour Kiss</option>
+    <option>Silk Aura</option>
+    <option>Mfalme</option>
+    <option>Black Reserve</option>
+    <option>Savage</option>
+    <option>Safi Breeze</option>
+    <option>Ion Drift</option>
+  </select>
+</div>
+
+</div>           
             </div>
 
             <div>
@@ -635,7 +675,7 @@
     <div class="info-grid">
       <div class="info-item">
         <h3>Text Orders</h3>
-        <p>(217)860-5408</p>
+        <p>(217)433-4754</p>
       </div>
 
       <div class="info-item">
