@@ -434,7 +434,70 @@ textarea {
   line-height: 1.6;
   font-size: 1.05rem;
 }
+/* PRODUCT SECTION CONTRAST */
 
+.products-section {
+  position: relative;
+  padding: 90px 8% 110px;
+  background:
+    linear-gradient(
+      135deg,
+      #0d2f91 0%,
+      #1746d1 55%,
+      #0b286f 100%
+    );
+  overflow: hidden;
+}
+
+.products-section::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -180px;
+  top: -220px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow:
+    0 0 0 70px rgba(255,255,255,.025),
+    0 0 0 140px rgba(255,255,255,.015);
+  pointer-events: none;
+}
+
+.products-section .section-heading {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 52px;
+}
+
+.products-section .eyebrow {
+  color: var(--silver);
+}
+
+.products-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.products-section .section-heading p {
+  color: rgba(255,255,255,.78);
+}
+
+.products-section .product-cards {
+  position: relative;
+  z-index: 2;
+}
+
+.products-section .product-card {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.98) 0%,
+      rgba(247,249,255,.98) 100%
+    );
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow:
+    0 18px 38px rgba(0,0,0,.16);
+}
 /* PRODUCT CARDS */
 
 .product-cards {
