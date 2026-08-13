@@ -10,6 +10,7 @@ const scentDisplayName = document.getElementById("scentDisplayName");
 const scentDisplayDescription = document.getElementById(
   "scentDisplayDescription"
 );
+const scentDisplay = document.querySelector(".scent-display");
 
 function updateTotal() {
   if (!productSelect.value) {
@@ -42,13 +43,18 @@ productSelect.addEventListener("change", () => {
 
 quantitySelect.addEventListener("change", updateTotal);
 
-scentCards.forEach((card) => {
+scentCards.forEach(card => {
   card.addEventListener("click", () => {
     const scentName = card.dataset.scent;
     const scentDescription = card.dataset.description;
+    const isMobile = window.innerWidth <= 800;
 
     scentDisplayName.textContent = scentName;
     scentDisplayDescription.textContent = scentDescription;
+
+    if (isMobile) {
+      card.insertAdjacentElement("afterend", scentDisplay);
+    }
   });
 });
 
