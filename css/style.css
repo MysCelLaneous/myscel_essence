@@ -979,34 +979,22 @@ textarea {
   font-weight: 700;
 }
 
-/* ========================================
-   MIX & MATCH LAYOUT POLISH
-======================================== */
+/* MIX & MATCH FINAL LAYOUT */
+
+.order-builder {
+  position: relative;
+}
 
 .mix-match-fields {
-  display: grid;
-  grid-template-columns: 1fr 220px;
-  column-gap: 24px;
-  align-items: start;
+  grid-column: 1 / 4;
 }
 
-/* Product + bundle controls stay on left */
-.mix-match-fields > label,
-.mix-match-fields > select,
-.mix-match-fields #bundleSelections {
-  grid-column: 1;
-}
-
-/* Total sits upper-right */
-.mix-match-fields .order-total {
-  grid-column: 2;
-  grid-row: 1 / span 2;
+.order-total {
+  grid-column: 4;
+  grid-row: 1;
   align-self: start;
-  width: 100%;
-  margin: 0;
 }
 
-/* Bundle area */
 #bundleSelections {
   width: 100%;
 }
@@ -1015,11 +1003,25 @@ textarea {
   width: 100%;
 }
 
-/* Keep the 3 scents neatly across */
 .mix-match-bundle .mix-match-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .mix-match-fields,
+  .order-total {
+    grid-column: 1 / -1;
+  }
+
+  .order-total {
+    grid-row: auto;
+  }
+
+  .mix-match-bundle .mix-match-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Mobile */
