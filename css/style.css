@@ -987,6 +987,7 @@ textarea {
 
 .mix-match-fields {
   grid-column: 1 / 4;
+  margin-top: 10px;
 }
 
 .order-total {
