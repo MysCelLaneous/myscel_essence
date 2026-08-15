@@ -975,6 +975,21 @@ textarea {
   display: grid;
   gap: 8px;
 }
+.mix-match-bundle {
+  margin-top: 16px;
+}
+
+.bundle-title {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue-dark);
+  font-size: 0.9rem;
+}
+
+.mix-match-bundle + .mix-match-bundle {
+  padding-top: 16px;
+  border-top: 1px solid var(--silver-light);
+}
 
 .order-total {
   min-height: 74px;
