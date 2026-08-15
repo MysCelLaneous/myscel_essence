@@ -1209,7 +1209,10 @@ textarea {
 
 .footer-logo {
   width: 170px;
-  margin: 0 auto 10px;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .site-footer p {
