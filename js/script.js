@@ -115,7 +115,7 @@ function generateBundles() {
 function toggleMixMatch() {
   const isMixMatch = productSelect.value === "12";
 
-  const quantityField = quantitySelect.closest(".form-field");
+ const quantityField = quantitySelect.parentElement;
 
   if (isMixMatch) {
     regularFragrance.hidden = true;
